@@ -4,7 +4,8 @@
 }
 
 #banner {
-    height: 46rem;
+    height: 595px;
+    overflow: hidden;
     background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-2/pattern.jpeg');
     background-position: center;
     background-size: cover;
@@ -53,9 +54,11 @@ nav li {
     font-family: Zapfino;
     font-size: 20px;
     z-index: 6;
+    width: 250px;
     position: absolute;
     top: 4px;
-    right: 1100px;
+    right: 80%;
+    overflow: hidden;
 
 }
 
