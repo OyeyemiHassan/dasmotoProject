@@ -38,6 +38,9 @@ header {
 nav {
     margin: 0;
     padding: 20px 0;
+    width: 50%;
+    position: relative;
+    left: 380px;
   }
   
 nav li {
@@ -46,7 +49,7 @@ nav li {
     font-weight: 600;
     font-size: 12px;
     display: inline-block;
-    width: 80px;
+    padding: 0 20px;
   }
 
 #logo {
@@ -72,9 +75,9 @@ nav li {
     max-height: 59px;
     text-align: center;
     z-index: 9;
-    position: absolute;
-    bottom: 400px;
-    left: 600px;
+    position: relative;
+    bottom: 300px;
+    left: 20px;
     margin: 0 auto;
 }
 
@@ -131,7 +134,15 @@ h1 {
     overflow: hidden;
 }
 
-p, h3 {
+.container h3 {
+    text-align: center;
+    color: #707070;
+    font-family: "Helvetica Neue";
+    font-size: 14px;
+    margin: 10px 10px;
+}
+
+.container p {
     min-width: 200px;
     max-width: 350px;
     text-align: center;
@@ -145,9 +156,14 @@ p, h3 {
     color: #0000FF;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-    .h1 {
-      position: absoulte;
-      bottom: 50px;
+@media only screen and (min-width: 320px) and (max-width: 560px) {
+    .container {
+      display: block;
+    }
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 560px) {
+    .nav {
+      width: 25%;
     }
   }
